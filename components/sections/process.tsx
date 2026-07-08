@@ -39,11 +39,14 @@ export function Process() {
           </h2>
         </FadeIn>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-4">
+        <div className="relative mt-14 grid gap-10 md:grid-cols-4 md:gap-6">
+          <div className="pointer-events-none absolute top-3 left-0 right-0 hidden h-px bg-line md:block" />
           {steps.map((step, i) => (
-            <FadeIn key={step.number} delay={i * 0.06}>
-              <span className="font-display text-3xl text-gold">{step.number}</span>
-              <h3 className="mt-3 font-display text-lg text-ink">{step.title}</h3>
+            <FadeIn key={step.number} delay={i * 0.06} className="relative">
+              <span className="relative z-10 inline-block bg-cream pr-4 font-display text-3xl italic text-gold md:pr-0">
+                {step.number}
+              </span>
+              <h3 className="mt-4 font-display text-lg text-ink">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.description}</p>
             </FadeIn>
           ))}
