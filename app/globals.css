@@ -1,28 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand palette v2 — soft blush/boutique direction, aligned to a client-provided
-     reference (warm blush + ivory, muted rose accent) and to the real brand
-     monogram (a stylized "M") instead of a generic accent shape. */
-  --color-cream: 32 42% 96%;        /* page background, warm ivory */
-  --color-blush: 14 42% 91%;        /* alt section / card background */
-  --color-blush-deep: 14 36% 85%;   /* dividers, decorative monogram */
-  --color-ink: 20 28% 16%;          /* primary text, warm near-black */
-  --color-ink-soft: 20 14% 36%;     /* secondary text */
-  --color-rose: 12 44% 45%;         /* primary CTA / accent (eyebrows, links) */
-  --color-rose-dark: 12 48% 37%;    /* hover state */
-  --color-line: 20 22% 86%;         /* borders */
+  /* Brand palette v3 — "high-end clinic" direction: ivory + near-black + a
+     refined champagne gold, matching the client's real logo (black background,
+     thin gold serif wordmark) instead of a borrowed blush reference. */
+  --color-cream: 38 24% 97%;        /* page background, refined ivory */
+  --color-graphite: 30 10% 93%;     /* alt section / card background */
+  --color-graphite-deep: 28 8% 86%; /* dividers, decorative monogram */
+  --color-ink: 20 15% 11%;          /* primary text, near-black; also dark section bg */
+  --color-ink-soft: 20 8% 38%;      /* secondary text */
+  --color-gold: 38 42% 45%;         /* accent: eyebrows, links, icon strokes */
+  --color-gold-dark: 38 46% 36%;    /* hover state for gold-on-light elements */
+  --color-line: 30 12% 85%;         /* borders */
   --color-card: 0 0% 100%;          /* card surfaces */
 }
 
 @theme inline {
   --color-cream: hsl(var(--color-cream));
-  --color-blush: hsl(var(--color-blush));
-  --color-blush-deep: hsl(var(--color-blush-deep));
+  --color-graphite: hsl(var(--color-graphite));
+  --color-graphite-deep: hsl(var(--color-graphite-deep));
   --color-ink: hsl(var(--color-ink));
   --color-ink-soft: hsl(var(--color-ink-soft));
-  --color-rose: hsl(var(--color-rose));
-  --color-rose-dark: hsl(var(--color-rose-dark));
+  --color-gold: hsl(var(--color-gold));
+  --color-gold-dark: hsl(var(--color-gold-dark));
   --color-line: hsl(var(--color-line));
   --color-card: hsl(var(--color-card));
 
@@ -52,7 +52,7 @@ body {
 }
 
 ::selection {
-  background: hsl(var(--color-rose) / 0.2);
+  background: hsl(var(--color-gold) / 0.2);
 }
 
 .font-display {

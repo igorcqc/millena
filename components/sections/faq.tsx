@@ -14,7 +14,7 @@ export function Faq() {
     <Section id="duvidas">
       <Container className="max-w-3xl">
         <FadeIn>
-          <p className="text-center text-sm font-medium uppercase tracking-[0.14em] text-rose">
+          <p className="text-center text-sm font-medium uppercase tracking-[0.14em] text-gold">
             Dúvidas frequentes
           </p>
           <h2 className="mt-3 text-center font-display text-3xl text-ink md:text-4xl">

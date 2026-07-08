@@ -9,7 +9,7 @@ export function FinalCta() {
     <Section id="contato" className="bg-ink text-cream">
       <Container className="text-center">
         <FadeIn>
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-rose">
+          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">
             Agende sua avaliação
           </p>
           <h2 className="mx-auto mt-3 max-w-2xl font-display text-3xl md:text-4xl">
@@ -24,6 +24,7 @@ export function FinalCta() {
               href={whatsappLink(whatsappMessages.finalCta)}
               location="final_cta"
               size="lg"
+              variant="secondary"
             >
               Agendar avaliação no WhatsApp
             </WhatsAppCtaLink>

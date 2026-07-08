@@ -3,12 +3,12 @@ import Link from "next/link";
 import { forwardRef } from "react";
 
 const base =
-  "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose focus-visible:ring-offset-2 focus-visible:ring-offset-cream disabled:pointer-events-none disabled:opacity-50";
+  "inline-flex items-center justify-center gap-2 rounded-full font-semibold transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-cream disabled:pointer-events-none disabled:opacity-50";
 
 const variants = {
-  primary: "bg-rose text-white hover:bg-rose-dark active:bg-rose-dark",
-  secondary: "bg-ink text-cream hover:bg-ink/90",
-  ghost: "bg-transparent text-ink border border-line hover:bg-blush",
+  primary: "bg-ink text-cream hover:bg-ink/85 active:bg-ink/85",
+  secondary: "bg-gold text-white hover:bg-gold-dark active:bg-gold-dark",
+  ghost: "bg-transparent text-ink border border-ink/30 hover:bg-graphite",
 };
 
 const sizes = {

@@ -31,7 +31,7 @@ export function Process() {
     <Section className="border-t border-line">
       <Container>
         <FadeIn className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-rose">
+          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">
             Como funciona
           </p>
           <h2 className="mt-3 font-display text-3xl text-ink md:text-4xl">
@@ -42,7 +42,7 @@ export function Process() {
         <div className="mt-10 grid gap-8 md:grid-cols-4">
           {steps.map((step, i) => (
             <FadeIn key={step.number} delay={i * 0.06}>
-              <span className="font-display text-3xl text-rose">{step.number}</span>
+              <span className="font-display text-3xl text-gold">{step.number}</span>
               <h3 className="mt-3 font-display text-lg text-ink">{step.title}</h3>
               <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.description}</p>
             </FadeIn>

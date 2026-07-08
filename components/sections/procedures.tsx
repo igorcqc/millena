@@ -9,7 +9,7 @@ export function Procedures() {
     <Section id="procedimentos">
       <Container>
         <FadeIn className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-rose">
+          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">
             Procedimentos
           </p>
           <h2 className="mt-3 font-display text-3xl text-ink md:text-4xl">

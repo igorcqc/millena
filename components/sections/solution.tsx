@@ -25,10 +25,10 @@ const points = [
 
 export function Solution() {
   return (
-    <Section className="bg-blush">
+    <Section className="bg-graphite">
       <Container className="grid gap-10 md:grid-cols-2 md:items-center">
         <FadeIn>
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-rose">
+          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">
             Por que uma dentista faz harmonização facial
           </p>
           <h2 className="mt-3 font-display text-3xl text-ink md:text-4xl">
@@ -45,7 +45,7 @@ export function Solution() {
           <ul className="space-y-5">
             {points.map(({ icon: Icon, text }) => (
               <li key={text} className="flex gap-4 leading-relaxed text-ink">
-                <Icon className="mt-0.5 h-5 w-5 shrink-0 text-rose" strokeWidth={1.5} />
+                <Icon className="mt-0.5 h-5 w-5 shrink-0 text-gold" strokeWidth={1.5} />
                 <span>{text}</span>
               </li>
             ))}

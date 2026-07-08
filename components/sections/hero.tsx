@@ -20,7 +20,7 @@ export function Hero() {
     <div id="top" className="relative overflow-hidden">
       <Container className="grid gap-10 py-14 md:grid-cols-2 md:items-center md:py-20">
         <div>
-          <p className="mb-4 text-sm font-medium uppercase tracking-[0.14em] text-rose">
+          <p className="mb-4 text-sm font-medium uppercase tracking-[0.14em] text-gold">
             Harmonização Orofacial · {site.cities.join(" e ")}
           </p>
           <h1 className="font-display text-4xl leading-[1.1] text-ink md:text-5xl">
@@ -61,7 +61,7 @@ export function Hero() {
                   href={site.instagramUrl}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="text-rose underline underline-offset-2"
+                  className="text-gold underline underline-offset-2"
                 >
                   {site.instagramHandle}
                 </a>
@@ -70,7 +70,7 @@ export function Hero() {
           </dl>
         </div>
 
-        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-blush">
+        <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-graphite">
           {hasHeroImage ? (
             <Image
               src={heroImageSrc}

@@ -13,10 +13,10 @@ function fileExists(publicPath: string) {
 
 export function Results() {
   return (
-    <Section id="resultados" className="bg-blush">
+    <Section id="resultados" className="bg-graphite">
       <Container>
         <FadeIn className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-rose">Resultados</p>
+          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">Resultados</p>
           <h2 className="mt-3 font-display text-3xl text-ink md:text-4xl">
             Antes e depois reais de pacientes
           </h2>

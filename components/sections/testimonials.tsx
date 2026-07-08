@@ -6,11 +6,11 @@ import { testimonials } from "@/content/site";
 
 export function Testimonials() {
   return (
-    <Section className="relative overflow-hidden bg-blush">
+    <Section className="relative overflow-hidden bg-graphite">
       <MonogramWatermark className="-left-16 -top-24 md:-left-10 md:-top-32" />
       <Container className="relative">
         <FadeIn className="max-w-2xl text-center md:mx-auto">
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-rose">
+          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">
             O que as pacientes dizem
           </p>
           <h2 className="mt-3 font-display text-3xl text-ink md:text-4xl">
@@ -21,7 +21,7 @@ export function Testimonials() {
         <div className="mt-12 grid gap-x-10 gap-y-10 md:grid-cols-2">
           {testimonials.map((testimonial, i) => (
             <FadeIn key={testimonial.quote} delay={i * 0.08}>
-              <blockquote className="border-t border-blush-deep pt-5">
+              <blockquote className="border-t border-graphite-deep pt-5">
                 <p className="leading-relaxed text-ink">&ldquo;{testimonial.quote}&rdquo;</p>
                 <cite className="mt-4 block text-sm not-italic text-ink-soft">
                   {testimonial.attribution}

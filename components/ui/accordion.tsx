@@ -28,13 +28,13 @@ export function AccordionTrigger({
       <AccordionPrimitive.Trigger
         className={cn(
           "group flex flex-1 items-center justify-between gap-4 py-5 text-left font-display text-lg text-ink transition-colors",
-          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-rose focus-visible:ring-offset-2 focus-visible:ring-offset-cream",
+          "focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-gold focus-visible:ring-offset-2 focus-visible:ring-offset-cream",
           className
         )}
         {...props}
       >
         {children}
-        <ChevronDown className="h-5 w-5 shrink-0 text-rose transition-transform duration-300 group-data-[state=open]:rotate-180" />
+        <ChevronDown className="h-5 w-5 shrink-0 text-gold transition-transform duration-300 group-data-[state=open]:rotate-180" />
       </AccordionPrimitive.Trigger>
     </AccordionPrimitive.Header>
   );
