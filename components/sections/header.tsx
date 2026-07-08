@@ -12,7 +12,10 @@ export function Header() {
   return (
     <header className="sticky top-0 z-50 border-b border-line/70 bg-cream/90 backdrop-blur-sm">
       <Container className="flex h-16 items-center justify-between md:h-20">
-        <a href="#top" className="font-display text-lg tracking-wide text-ink md:text-xl">
+        <a
+          href="#top"
+          className="font-display text-lg uppercase tracking-[0.14em] text-ink md:text-xl"
+        >
           Millena Curty
         </a>
         <nav className="hidden items-center gap-8 md:flex">
@@ -20,9 +23,10 @@ export function Header() {
             <a
               key={link.href}
               href={link.href}
-              className="text-sm text-ink-soft transition-colors hover:text-ink"
+              className="group relative text-sm text-ink-soft transition-colors hover:text-ink"
             >
               {link.label}
+              <span className="absolute -bottom-1 left-0 h-px w-0 bg-gold transition-all duration-300 group-hover:w-full" />
             </a>
           ))}
         </nav>

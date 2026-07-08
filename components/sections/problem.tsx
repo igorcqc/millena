@@ -1,10 +1,11 @@
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { FadeIn } from "@/components/ui/fade-in";
+import { SectionHeading } from "@/components/ui/section-heading";
 
 const worries = [
   {
-    title: "Medo de ficar \"estufada\"",
+    title: "Medo de ficar “estufada”",
     description:
       "Boca de pato, maçã do rosto artificial, rosto que parece com o de qualquer outra pessoa que fez o mesmo procedimento.",
   },
@@ -16,27 +17,26 @@ const worries = [
   {
     title: "Não saber em quem confiar",
     description:
-      "Procedimento estético sem entender quem está por trás da agulha, sem saber se a avaliação é séria ou só \"venda de pacote\".",
+      "Procedimento estético sem entender quem está por trás da agulha, sem saber se a avaliação é séria ou só “venda de pacote”.",
   },
 ];
 
 export function Problem() {
   return (
-    <Section className="border-b border-line">
+    <Section>
       <Container>
-        <FadeIn>
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">
-            Antes de qualquer procedimento
-          </p>
-          <h2 className="mt-3 max-w-2xl font-display text-3xl text-ink md:text-4xl">
-            Se alguma dessas preocupações é sua, você não está exagerando.
-          </h2>
-        </FadeIn>
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
+        <SectionHeading
+          index="01"
+          eyebrow="Antes de qualquer procedimento"
+          title="Se alguma dessas preocupações é sua, você não está exagerando."
+        />
+        <div className="mt-14 grid gap-10 md:grid-cols-3 md:gap-8">
           {worries.map((worry, i) => (
             <FadeIn key={worry.title} delay={i * 0.08}>
-              <h3 className="font-display text-xl text-ink">{worry.title}</h3>
-              <p className="mt-2 leading-relaxed text-ink-soft">{worry.description}</p>
+              <div className="border-t border-line pt-6">
+                <h3 className="font-display text-2xl text-ink">{worry.title}</h3>
+                <p className="mt-3 leading-relaxed text-ink-soft">{worry.description}</p>
+              </div>
             </FadeIn>
           ))}
         </div>

@@ -1,6 +1,7 @@
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { FadeIn } from "@/components/ui/fade-in";
+import { SectionHeading } from "@/components/ui/section-heading";
 
 const steps = [
   {
@@ -30,24 +31,23 @@ export function Process() {
   return (
     <Section className="border-t border-line">
       <Container>
-        <FadeIn className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">
-            Como funciona
-          </p>
-          <h2 className="mt-3 font-display text-3xl text-ink md:text-4xl">
-            Do primeiro contato ao resultado
-          </h2>
-        </FadeIn>
+        <SectionHeading
+          index="04"
+          eyebrow="Como funciona"
+          title="Do primeiro contato ao resultado"
+        />
 
-        <div className="mt-10 grid gap-8 md:grid-cols-4">
+        <ol className="mt-14 grid gap-10 md:grid-cols-4 md:gap-8">
           {steps.map((step, i) => (
             <FadeIn key={step.number} delay={i * 0.06}>
-              <span className="font-display text-3xl text-gold">{step.number}</span>
-              <h3 className="mt-3 font-display text-lg text-ink">{step.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.description}</p>
+              <li className="flex h-full flex-col">
+                <span className="font-display text-4xl italic text-gold">{step.number}</span>
+                <h3 className="mt-4 font-display text-xl text-ink">{step.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-ink-soft">{step.description}</p>
+              </li>
             </FadeIn>
           ))}
-        </div>
+        </ol>
       </Container>
     </Section>
   );

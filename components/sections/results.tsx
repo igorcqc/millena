@@ -5,6 +5,7 @@ import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { PendingImage } from "@/components/ui/pending-image";
+import { SectionHeading } from "@/components/ui/section-heading";
 import { results } from "@/content/site";
 
 function fileExists(publicPath: string) {
@@ -15,37 +16,40 @@ export function Results() {
   return (
     <Section id="resultados" className="bg-graphite">
       <Container>
-        <FadeIn className="max-w-2xl">
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">Resultados</p>
-          <h2 className="mt-3 font-display text-3xl text-ink md:text-4xl">
-            Antes e depois reais de pacientes
-          </h2>
-          <p className="mt-4 leading-relaxed text-ink-soft">
-            Fotos de pacientes reais, com autorização de uso de imagem.
-          </p>
-        </FadeIn>
+        <SectionHeading
+          index="05"
+          eyebrow="Resultados"
+          title="Antes e depois reais de pacientes"
+          lead="Fotos de pacientes reais, com autorização de uso de imagem."
+        />
 
-        <div className="mt-10 grid gap-6 md:grid-cols-3">
+        <div className="mt-14 grid gap-8 md:grid-cols-3">
           {results.map((result, i) => {
             const exists = fileExists(result.src);
             return (
               <FadeIn key={result.id} delay={i * 0.08}>
-                <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-cream">
-                  {exists ? (
-                    <Image
-                      src={result.src}
-                      alt={result.label}
-                      fill
-                      loading="lazy"
-                      className="object-cover"
-                    />
-                  ) : (
-                    <PendingImage
-                      note={`Foto real aguardando upload em public${result.src}`}
-                    />
-                  )}
-                </div>
-                <p className="mt-3 text-sm text-ink-soft">{result.label}</p>
+                <figure>
+                  <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-cream">
+                    {exists ? (
+                      <Image
+                        src={result.src}
+                        alt={result.label}
+                        fill
+                        loading="lazy"
+                        sizes="(min-width: 768px) 33vw, 100vw"
+                        className="object-cover"
+                      />
+                    ) : (
+                      <PendingImage note={`Foto real aguardando upload em public${result.src}`} />
+                    )}
+                  </div>
+                  <figcaption className="mt-4 flex gap-3 text-sm leading-relaxed text-ink-soft">
+                    <span className="font-display italic text-gold">
+                      {String(i + 1).padStart(2, "0")}
+                    </span>
+                    {result.label}
+                  </figcaption>
+                </figure>
               </FadeIn>
             );
           })}

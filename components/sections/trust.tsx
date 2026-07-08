@@ -1,5 +1,4 @@
 import { Container } from "@/components/layout/container";
-import { Section } from "@/components/layout/section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { site } from "@/content/site";
 
@@ -21,17 +20,22 @@ const signals = [
 
 export function Trust() {
   return (
-    <Section className="border-y border-line bg-graphite">
+    <section className="border-y border-line bg-graphite py-14 md:py-16">
       <Container>
-        <div className="grid gap-8 md:grid-cols-3">
+        <div className="grid gap-10 md:grid-cols-3 md:gap-8">
           {signals.map((signal, i) => (
             <FadeIn key={signal.title} delay={i * 0.06}>
-              <h3 className="font-display text-lg text-ink">{signal.title}</h3>
-              <p className="mt-2 text-sm leading-relaxed text-ink-soft">{signal.description}</p>
+              <h3 className="flex items-baseline gap-3 font-display text-xl text-ink">
+                <span className="h-px w-6 shrink-0 translate-y-[-0.3em] bg-gold" />
+                {signal.title}
+              </h3>
+              <p className="mt-3 pl-9 text-sm leading-relaxed text-ink-soft">
+                {signal.description}
+              </p>
             </FadeIn>
           ))}
         </div>
       </Container>
-    </Section>
+    </section>
   );
 }

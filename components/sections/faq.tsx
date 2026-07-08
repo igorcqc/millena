@@ -1,6 +1,7 @@
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { FadeIn } from "@/components/ui/fade-in";
+import { SectionHeading } from "@/components/ui/section-heading";
 import {
   Accordion,
   AccordionContent,
@@ -13,16 +14,14 @@ export function Faq() {
   return (
     <Section id="duvidas">
       <Container className="max-w-3xl">
-        <FadeIn>
-          <p className="text-center text-sm font-medium uppercase tracking-[0.14em] text-gold">
-            Dúvidas frequentes
-          </p>
-          <h2 className="mt-3 text-center font-display text-3xl text-ink md:text-4xl">
-            Perguntas que mais recebo
-          </h2>
-        </FadeIn>
+        <SectionHeading
+          index="07"
+          eyebrow="Dúvidas frequentes"
+          title="Perguntas que mais recebo"
+          align="center"
+        />
 
-        <FadeIn delay={0.1} className="mt-10">
+        <FadeIn delay={0.1} className="mt-12">
           <Accordion type="single" collapsible>
             {faqs.map((faq, i) => (
               <AccordionItem key={faq.question} value={`item-${i}`}>
