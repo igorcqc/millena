@@ -30,25 +30,22 @@ export function Results() {
             const exists = fileExists(result.src);
             return (
               <FadeIn key={result.id} delay={i * 0.08}>
-                <div className="relative">
-                  <div className="pointer-events-none absolute -inset-2 hidden border border-gold/30 md:block" />
-                  <div className="relative aspect-[4/5] w-full overflow-hidden bg-cream">
-                    {exists ? (
-                      <Image
-                        src={result.src}
-                        alt={result.label}
-                        fill
-                        loading="lazy"
-                        className="object-cover transition-transform duration-700 hover:scale-[1.03]"
-                      />
-                    ) : (
-                      <PendingImage
-                        note={`Foto real aguardando upload em public${result.src}`}
-                      />
-                    )}
-                  </div>
+                <div className="relative aspect-[4/5] w-full overflow-hidden rounded-2xl bg-cream">
+                  {exists ? (
+                    <Image
+                      src={result.src}
+                      alt={result.label}
+                      fill
+                      loading="lazy"
+                      className="object-cover"
+                    />
+                  ) : (
+                    <PendingImage
+                      note={`Foto real aguardando upload em public${result.src}`}
+                    />
+                  )}
                 </div>
-                <p className="mt-4 text-sm text-ink-soft">{result.label}</p>
+                <p className="mt-3 text-sm text-ink-soft">{result.label}</p>
               </FadeIn>
             );
           })}

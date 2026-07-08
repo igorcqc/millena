@@ -1,18 +1,15 @@
 import { Container } from "@/components/layout/container";
-import { Logotype } from "@/components/ui/logotype";
 import { site } from "@/content/site";
 
 export function Footer() {
   return (
     <footer className="bg-ink text-cream/70">
-      <Container className="flex flex-col gap-6 py-12 md:flex-row md:items-center md:justify-between">
+      <Container className="flex flex-col gap-4 py-10 text-sm md:flex-row md:items-center md:justify-between">
         <div>
-          <Logotype tone="cream" />
-          <p className="mt-3 text-sm">
-            {site.role} · {site.credential}
-          </p>
+          <p className="font-display text-base text-cream">{site.name}</p>
+          <p>{site.role} · {site.credential}</p>
         </div>
-        <div className="flex flex-wrap gap-x-6 gap-y-2 text-sm">
+        <div className="flex flex-wrap gap-x-6 gap-y-2">
           <a
             href={site.instagramUrl}
             target="_blank"
