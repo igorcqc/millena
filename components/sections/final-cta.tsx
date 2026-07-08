@@ -22,8 +22,8 @@ export function FinalCta() {
             Vamos conversar sobre o que faz sentido para o seu rosto
           </h2>
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-cream/70">
-            Atendimento em {site.cities.join(" e ")}. Fale pelo WhatsApp e agende sua avaliação —
-            o orçamento é sempre feito depois da análise presencial.
+            Atendimento em {site.cities.join(" e ")}. Fale pelo WhatsApp e agende sua avaliação. O
+            orçamento é sempre feito depois da análise presencial.
           </p>
           <div className="mt-9 flex justify-center">
             <WhatsAppCtaLink
@@ -35,7 +35,7 @@ export function FinalCta() {
               Agendar avaliação no WhatsApp
             </WhatsAppCtaLink>
           </div>
-          <p className="mt-5 text-sm text-cream/50">Sem compromisso — a conversa não obriga nada.</p>
+          <p className="mt-5 text-sm text-cream/50">É só uma conversa. Você decide o resto depois.</p>
         </FadeIn>
       </Container>
     </Section>

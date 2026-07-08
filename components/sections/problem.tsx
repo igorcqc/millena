@@ -12,7 +12,7 @@ const worries = [
   {
     title: "Insegurança com assimetrias",
     description:
-      "Queixo recuado, mandíbula pouco definida, lábios desproporcionais — pontos que incomodam no dia a dia e nas fotos.",
+      "Queixo recuado, mandíbula pouco definida, lábios desproporcionais. Pequenos detalhes que incomodam no dia a dia e nas fotos.",
   },
   {
     title: "Não saber em quem confiar",

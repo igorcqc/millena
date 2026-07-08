@@ -13,7 +13,7 @@ export function Procedures() {
           index="03"
           eyebrow="Procedimentos"
           title="O que é avaliado e pode ser indicado"
-          lead="Cada procedimento só é sugerido depois da avaliação — nenhum deles é vendido como pacote fechado."
+          lead="Nada é indicado antes da avaliação. Aqui não existe pacote fechado: o plano nasce do seu rosto."
         />
 
         <div className="mt-14 grid gap-x-10 gap-y-12 md:grid-cols-2 lg:grid-cols-3">

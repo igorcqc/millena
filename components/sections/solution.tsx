@@ -8,19 +8,19 @@ import { site } from "@/content/site";
 const points = [
   {
     icon: Bone,
-    text: "Avaliação da estrutura óssea, oclusão e musculatura facial antes de sugerir qualquer procedimento",
+    text: "Avaliação da estrutura óssea, da oclusão e da musculatura facial antes de indicar qualquer procedimento",
   },
   {
     icon: FileText,
-    text: "Plano de tratamento individual — o objetivo é realçar seus traços, não aplicar uma fórmula pronta",
+    text: "Plano individual para cada rosto, nunca uma fórmula pronta",
   },
   {
     icon: ShieldCheck,
-    text: "Produtos registrados e de procedência, com biossegurança rigorosa em todas as etapas",
+    text: "Produtos registrados e biossegurança rigorosa em cada etapa",
   },
   {
     icon: CalendarCheck,
-    text: "Acompanhamento após o procedimento, não só no dia da aplicação",
+    text: "Acompanhamento de perto no pós-procedimento, com retorno marcado",
   },
 ];
 
@@ -31,7 +31,7 @@ export function Solution() {
         <SectionHeading
           index="02"
           eyebrow="Por que uma dentista"
-          title="Harmonização orofacial é uma especialidade odontológica — não só estética de superfície."
+          title="Harmonização orofacial é uma especialidade odontológica. A estética vem depois da estrutura."
           lead={`Como cirurgiã-dentista (${site.credential}), ${site.name} estuda a base que sustenta o resultado: ossos, dentes, oclusão e musculatura da face. É essa base que decide se um preenchimento ou uma toxina vai parecer natural ou artificial.`}
         />
         <FadeIn delay={0.1}>

@@ -4,17 +4,17 @@ import { site } from "@/content/site";
 
 const signals = [
   {
-    title: "Registro profissional verificável",
-    description: `${site.credential} — cirurgiã-dentista, consulta pública no site do Conselho Regional de Odontologia.`,
+    title: "Registro que você pode conferir",
+    description: `${site.credential}. Você pode checar o registro no site do Conselho Regional de Odontologia.`,
   },
   {
-    title: "Produtos registrados e de procedência",
-    description: "Nenhum produto sem procedência ou fora das normas de biossegurança é utilizado.",
+    title: "Produtos com procedência",
+    description: "Só uso produtos registrados, com procedência e nota fiscal.",
   },
   {
     title: "Avaliação antes da venda",
     description:
-      "Procedimento nenhum é indicado sem avaliação presencial da anatomia e da oclusão.",
+      "Nenhum procedimento é indicado sem avaliação presencial do seu rosto.",
   },
 ];
 

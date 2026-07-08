@@ -18,7 +18,7 @@ const steps = [
   {
     number: "03",
     title: "Plano individual e orçamento",
-    description: "Você recebe as opções, o que cada uma muda de fato, e o valor — sem surpresas.",
+    description: "Você recebe as opções, o que cada uma muda de fato e o valor, sem surpresas.",
   },
   {
     number: "04",

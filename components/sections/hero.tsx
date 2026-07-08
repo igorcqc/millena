@@ -29,12 +29,12 @@ export function Hero() {
             Harmonização Orofacial · {site.cities.join(" e ")}
           </p>
           <h1 className="font-display text-[2.75rem] leading-[1.06] text-ink md:text-6xl">
-            Harmonização facial planejada na sua anatomia — não em um padrão de rosto pronto.
+            Harmonização facial planejada na sua anatomia, não em um padrão de rosto pronto.
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-ink-soft">
             Sou {site.name}, {site.role.toLowerCase()} ({site.credential}). Antes de qualquer
             procedimento, avalio estrutura óssea e oclusão para um resultado que realça seus
-            traços — sem uniformizar seu rosto.
+            traços, sem uniformizar o seu rosto.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
             <WhatsAppCtaLink
