@@ -1,0 +1,81 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand palette — warm, editorial, chosen for Dra. Millena Curty
+     (deliberately distinct from ConversionOS defaults, per 26-avoiding-ai-cliches.md) */
+  --color-cream: 36 32% 96%;        /* page background */
+  --color-cream-deep: 32 28% 91%;   /* alt section background */
+  --color-ink: 20 22% 13%;          /* primary text */
+  --color-ink-soft: 22 14% 32%;     /* secondary text */
+  --color-clay: 16 46% 42%;         /* primary CTA / accent */
+  --color-clay-dark: 16 50% 34%;    /* hover state */
+  --color-gold: 34 34% 42%;         /* eyebrows, dividers, secondary accent */
+  --color-line: 30 20% 84%;         /* borders */
+  --color-card: 0 0% 100%;          /* card surfaces */
+}
+
+@theme inline {
+  --color-cream: hsl(var(--color-cream));
+  --color-cream-deep: hsl(var(--color-cream-deep));
+  --color-ink: hsl(var(--color-ink));
+  --color-ink-soft: hsl(var(--color-ink-soft));
+  --color-clay: hsl(var(--color-clay));
+  --color-clay-dark: hsl(var(--color-clay-dark));
+  --color-gold: hsl(var(--color-gold));
+  --color-line: hsl(var(--color-line));
+  --color-card: hsl(var(--color-card));
+
+  --font-display: var(--font-fraunces);
+  --font-sans: var(--font-manrope);
+
+  --max-width-container: 1200px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: hsl(var(--color-cream));
+  color: hsl(var(--color-ink));
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: hsl(var(--color-clay) / 0.2);
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.animate-accordion-down {
+  animation: accordion-down 250ms ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 200ms ease-out;
+}
