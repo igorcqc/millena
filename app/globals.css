@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+:root {
+  /* Brand palette v3 — "high-end clinic" direction: ivory + near-black + a
+     refined champagne gold, matching the client's real logo (black background,
+     thin gold serif wordmark) instead of a borrowed blush reference. */
+  --color-cream: 38 24% 97%;        /* page background, refined ivory */
+  --color-graphite: 30 10% 93%;     /* alt section / card background */
+  --color-graphite-deep: 28 8% 86%; /* dividers, decorative monogram */
+  --color-ink: 20 15% 11%;          /* primary text, near-black; also dark section bg */
+  --color-ink-soft: 20 8% 38%;      /* secondary text */
+  --color-gold: 38 42% 45%;         /* accent: eyebrows, links, icon strokes */
+  --color-gold-dark: 38 46% 36%;    /* hover state for gold-on-light elements */
+  --color-line: 30 12% 85%;         /* borders */
+  --color-card: 0 0% 100%;          /* card surfaces */
+}
+
+@theme inline {
+  --color-cream: hsl(var(--color-cream));
+  --color-graphite: hsl(var(--color-graphite));
+  --color-graphite-deep: hsl(var(--color-graphite-deep));
+  --color-ink: hsl(var(--color-ink));
+  --color-ink-soft: hsl(var(--color-ink-soft));
+  --color-gold: hsl(var(--color-gold));
+  --color-gold-dark: hsl(var(--color-gold-dark));
+  --color-line: hsl(var(--color-line));
+  --color-card: hsl(var(--color-card));
+
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-jost);
+
+  --max-width-container: 1200px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: hsl(var(--color-cream));
+  color: hsl(var(--color-ink));
+  font-family: var(--font-sans);
+}
+
+::selection {
+  background: hsl(var(--color-gold) / 0.2);
+}
+
+.font-display {
+  font-weight: 500;
+  letter-spacing: -0.01em;
+}
+
+@keyframes accordion-down {
+  from {
+    height: 0;
+  }
+  to {
+    height: var(--radix-accordion-content-height);
+  }
+}
+
+@keyframes accordion-up {
+  from {
+    height: var(--radix-accordion-content-height);
+  }
+  to {
+    height: 0;
+  }
+}
+
+.animate-accordion-down {
+  animation: accordion-down 250ms ease-out;
+}
+
+.animate-accordion-up {
+  animation: accordion-up 200ms ease-out;
+}
