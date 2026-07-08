@@ -16,7 +16,7 @@ export function Testimonials() {
           </h2>
         </FadeIn>
 
-        <div className="mt-10 grid gap-8 md:grid-cols-3">
+        <div className="mt-10 grid gap-8 md:grid-cols-2">
           {testimonials.map((testimonial, i) => (
             <FadeIn key={testimonial.quote} delay={i * 0.08}>
               <blockquote className="rounded-2xl border border-line bg-card p-6">

@@ -91,6 +91,11 @@ export const testimonials = [
     quote: "Quase 1 mês após, Dra. Sigo apaixonada e ansiosa pra próxima etapa.",
     attribution: "Paciente da Dra. Millena Curty · via WhatsApp",
   },
+  {
+    quote:
+      "Quando eu fazia com outra profissional sempre inchava e ficava roxo, e com a Dra. ficou normal. Zero dor, inchaço e roxo. Muito obrigada pelo resultado entregue.",
+    attribution: "Paciente da Dra. Millena Curty · via WhatsApp",
+  },
 ];
 
 export const faqs = [
