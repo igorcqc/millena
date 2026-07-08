@@ -59,17 +59,17 @@ export const procedures = [
 export const results = [
   {
     id: "resultado-1",
-    label: "Perfil — harmonização de nariz e lábios",
+    label: "Preenchimento em pontos estratégicos para melhorar o aspecto de cansaço e contorno facial",
     src: "/images/resultados/resultado-1.jpg",
   },
   {
     id: "resultado-2",
-    label: "Frontal — contorno facial",
+    label: "Detalhes que fazem toda a diferença — pontos estratégicos para realçar traços que já eram bonitos",
     src: "/images/resultados/resultado-2.jpg",
   },
   {
     id: "resultado-3",
-    label: "Perfil — definição de mandíbula e queixo",
+    label: "Rosto mais fino, mais marcado e de forma natural",
     src: "/images/resultados/resultado-3.jpg",
   },
 ];
