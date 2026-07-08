@@ -25,7 +25,7 @@ export function Problem() {
     <Section className="border-b border-line">
       <Container>
         <FadeIn>
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">
+          <p className="text-sm font-medium uppercase tracking-[0.14em] text-rose">
             Antes de qualquer procedimento
           </p>
           <h2 className="mt-3 max-w-2xl font-display text-3xl text-ink md:text-4xl">

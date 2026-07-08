@@ -1,27 +1,28 @@
 @import "tailwindcss";
 
 :root {
-  /* Brand palette — warm, editorial, chosen for Dra. Millena Curty
-     (deliberately distinct from ConversionOS defaults, per 26-avoiding-ai-cliches.md) */
-  --color-cream: 36 32% 96%;        /* page background */
-  --color-cream-deep: 32 28% 91%;   /* alt section background */
-  --color-ink: 20 22% 13%;          /* primary text */
-  --color-ink-soft: 22 14% 32%;     /* secondary text */
-  --color-clay: 16 46% 42%;         /* primary CTA / accent */
-  --color-clay-dark: 16 50% 34%;    /* hover state */
-  --color-gold: 34 34% 42%;         /* eyebrows, dividers, secondary accent */
-  --color-line: 30 20% 84%;         /* borders */
+  /* Brand palette v2 — soft blush/boutique direction, aligned to a client-provided
+     reference (warm blush + ivory, muted rose accent) and to the real brand
+     monogram (a stylized "M") instead of a generic accent shape. */
+  --color-cream: 32 42% 96%;        /* page background, warm ivory */
+  --color-blush: 14 42% 91%;        /* alt section / card background */
+  --color-blush-deep: 14 36% 85%;   /* dividers, decorative monogram */
+  --color-ink: 20 28% 16%;          /* primary text, warm near-black */
+  --color-ink-soft: 20 14% 36%;     /* secondary text */
+  --color-rose: 12 44% 45%;         /* primary CTA / accent (eyebrows, links) */
+  --color-rose-dark: 12 48% 37%;    /* hover state */
+  --color-line: 20 22% 86%;         /* borders */
   --color-card: 0 0% 100%;          /* card surfaces */
 }
 
 @theme inline {
   --color-cream: hsl(var(--color-cream));
-  --color-cream-deep: hsl(var(--color-cream-deep));
+  --color-blush: hsl(var(--color-blush));
+  --color-blush-deep: hsl(var(--color-blush-deep));
   --color-ink: hsl(var(--color-ink));
   --color-ink-soft: hsl(var(--color-ink-soft));
-  --color-clay: hsl(var(--color-clay));
-  --color-clay-dark: hsl(var(--color-clay-dark));
-  --color-gold: hsl(var(--color-gold));
+  --color-rose: hsl(var(--color-rose));
+  --color-rose-dark: hsl(var(--color-rose-dark));
   --color-line: hsl(var(--color-line));
   --color-card: hsl(var(--color-card));
 
@@ -51,7 +52,11 @@ body {
 }
 
 ::selection {
-  background: hsl(var(--color-clay) / 0.2);
+  background: hsl(var(--color-rose) / 0.2);
+}
+
+.font-display {
+  font-weight: 400;
 }
 
 @keyframes accordion-down {

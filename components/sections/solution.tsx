@@ -1,21 +1,34 @@
+import { Bone, CalendarCheck, FileText, ShieldCheck } from "lucide-react";
 import { Container } from "@/components/layout/container";
 import { Section } from "@/components/layout/section";
 import { FadeIn } from "@/components/ui/fade-in";
 import { site } from "@/content/site";
 
 const points = [
-  "Avaliação da estrutura óssea, oclusão e musculatura facial antes de sugerir qualquer procedimento",
-  "Plano de tratamento individual — o objetivo é realçar seus traços, não aplicar uma fórmula pronta",
-  "Produtos registrados e de procedência, com biossegurança rigorosa em todas as etapas",
-  "Acompanhamento após o procedimento, não só no dia da aplicação",
+  {
+    icon: Bone,
+    text: "Avaliação da estrutura óssea, oclusão e musculatura facial antes de sugerir qualquer procedimento",
+  },
+  {
+    icon: FileText,
+    text: "Plano de tratamento individual — o objetivo é realçar seus traços, não aplicar uma fórmula pronta",
+  },
+  {
+    icon: ShieldCheck,
+    text: "Produtos registrados e de procedência, com biossegurança rigorosa em todas as etapas",
+  },
+  {
+    icon: CalendarCheck,
+    text: "Acompanhamento após o procedimento, não só no dia da aplicação",
+  },
 ];
 
 export function Solution() {
   return (
-    <Section className="bg-cream-deep">
+    <Section className="bg-blush">
       <Container className="grid gap-10 md:grid-cols-2 md:items-center">
         <FadeIn>
-          <p className="text-sm font-medium uppercase tracking-[0.14em] text-gold">
+          <p className="text-sm font-medium uppercase tracking-[0.14em] text-rose">
             Por que uma dentista faz harmonização facial
           </p>
           <h2 className="mt-3 font-display text-3xl text-ink md:text-4xl">
@@ -29,11 +42,11 @@ export function Solution() {
           </p>
         </FadeIn>
         <FadeIn delay={0.1}>
-          <ul className="space-y-4">
-            {points.map((point) => (
-              <li key={point} className="flex gap-3 leading-relaxed text-ink">
-                <span className="mt-2.5 h-1.5 w-1.5 shrink-0 rounded-full bg-clay" />
-                <span>{point}</span>
+          <ul className="space-y-5">
+            {points.map(({ icon: Icon, text }) => (
+              <li key={text} className="flex gap-4 leading-relaxed text-ink">
+                <Icon className="mt-0.5 h-5 w-5 shrink-0 text-rose" strokeWidth={1.5} />
+                <span>{text}</span>
               </li>
             ))}
           </ul>

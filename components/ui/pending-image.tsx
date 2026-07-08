@@ -9,7 +9,7 @@ export function PendingImage({ note, className }: { note: string; className?: st
         className
       )}
     >
-      <ImageIcon className="h-6 w-6 text-gold" strokeWidth={1.5} />
+      <ImageIcon className="h-6 w-6 text-rose" strokeWidth={1.5} />
       <p className="text-sm leading-relaxed text-ink-soft">{note}</p>
     </div>
   );
