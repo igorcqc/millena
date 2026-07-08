@@ -26,8 +26,8 @@
   --color-line: hsl(var(--color-line));
   --color-card: hsl(var(--color-card));
 
-  --font-display: var(--font-fraunces);
-  --font-sans: var(--font-manrope);
+  --font-display: var(--font-cormorant);
+  --font-sans: var(--font-jost);
 
   --max-width-container: 1200px;
 }
@@ -56,7 +56,8 @@ body {
 }
 
 .font-display {
-  font-weight: 400;
+  font-weight: 500;
+  letter-spacing: -0.01em;
 }
 
 @keyframes accordion-down {
